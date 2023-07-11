@@ -14,7 +14,7 @@ spring:
     config:
       uri: http://eos-cloud-config-api-service:8888
   config:
-    import: optional:configserver:http://eos-cloud-config-api-service:8888/
+    import: optional:configserver:http://eos-cloud-config-api-service.prod.svc.cluster.local:8888/
 eureka:
   client:
     serviceUrl:
