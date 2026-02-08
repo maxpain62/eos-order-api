@@ -1,0 +1,12 @@
+replicaCount: 1
+
+containers:
+  image: 134448505602.dkr.ecr.ap-south-1.amazonaws.com/dev/eos-order-api:latest
+
+port: 8084
+
+labels:
+  app: eos-order-api
+  env: dev
+
+namespace: eos-dev
