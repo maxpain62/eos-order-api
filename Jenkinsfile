@@ -29,6 +29,7 @@ podTemplate(yaml: readTrusted('pod.yaml')) {
           TOKEN=$(cat /root/.m2/token.txt)
           sed "s|replace_me|$TOKEN|" settings-template.xml > /root/.m2/settings.xml
           mvn clean deploy
+          ls -l target
           '''
           }
         catch(e) {
